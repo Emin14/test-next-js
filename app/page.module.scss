@@ -1,0 +1,61 @@
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.posts {
+  min-height: calc(100vh - 70px);
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.post {
+  border-bottom: 1px solid black;
+}
+
+.title {
+  text-align: center;
+}
+
+.pages {
+  display: flex;
+  justify-content: center;
+  column-gap: 10px;
+  padding: 35px 0;
+  cursor: pointer;
+}
+
+.pageCount {
+  font-weight: 600;
+  width: 34px;
+  height: 34px;
+  background-color: rgba(32, 35, 51, 0.07);
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &.active {
+    color: white;
+    background-color: rgb(62, 203, 128);
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 20px;
+  padding: 20px 0 4px 0;
+  border-bottom: 1px solid rgb(145, 40, 40);
+  margin-bottom: 30px;
+}
+
+.link {
+  padding: 10px 20px;
+  background-color: rgb(46, 155, 126);
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+}

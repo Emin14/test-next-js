@@ -1,0 +1,74 @@
+.wrapper {
+  padding: 20px 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.author {
+  font-size: 20px;
+  background-color: rgba(32, 35, 51, 0.07);
+  padding: 6px 12px;
+  border-radius: 10px;
+
+  span:first-child {
+    color: rgba(8, 8, 8, 0.7);
+  }
+}
+
+.title {
+  text-align: center;
+  font-size: 28px;
+}
+
+.text {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.comments {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.comment {
+  border: solid black 1px;
+  padding: 4px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 4px;
+  position: relative;
+  span:first-child {
+    color: rgba(8, 8, 8, 0.7);
+  }
+}
+
+.button {
+  padding: 10px 20px;
+  background-color: rgb(46, 155, 126);
+  color: white;
+  border-radius: 10px;
+}
+
+.MdOutlineComment {
+  position: absolute;
+  left: -38px;
+  top: -14px;
+  font-size: 30px;
+  color: rgb(211, 146, 41);
+}
+
+.post {
+  padding: 10px;
+  background-color: rgb(239, 242, 216);
+  border: 1px solid black;
+  border-radius: 10px;
+}
