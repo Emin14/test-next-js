@@ -1,10 +1,10 @@
 'use client';
 import { useStore } from '@nanostores/react';
-import { pages, activePage } from '../../stores/page';
+import { paginationPages, activePage } from '../../stores/page';
 import styles from './pagination.module.scss';
 
 export default function Pagination() {
-  const $pages = useStore(pages);
+  const $pages = useStore(paginationPages);
   const $activePage = useStore(activePage);
 
   return (

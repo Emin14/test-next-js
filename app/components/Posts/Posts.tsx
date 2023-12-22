@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import { useStore } from '@nanostores/react';
 import { getPosts } from '../../utils/getPosts';
 import { getAllPost } from '../../utils/getAllPost';
-import { pages, activePage } from '../../stores/page';
+import { paginationPages, activePage } from '../../stores/page';
 import { Post } from '../../types/data';
 import styles from './posts.module.css';
 
@@ -20,7 +20,7 @@ export default function Posts() {
         const pagesArray = Array(pagesCount)
           .fill('')
           .map((_, i) => i + 1);
-        pages.set(pagesArray);
+          paginationPages.set(pagesArray);
       })
       .catch((error) => console.log(error));
   }, []);
