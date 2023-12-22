@@ -1,10 +1,15 @@
 import { atom } from 'nanostores';
 
-export const user = atom({
+interface ISign {
+  email: string;
+  password: string;
+}
+
+export const user = atom<ISign>({
   email: '',
   password: '',
 });
 
-export const currentUser = atom({
+export const currentUser = atom<{ email: string }>({
   email: '',
 });

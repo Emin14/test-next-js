@@ -1,6 +1,6 @@
-import { IComment } from '../types/data';
+import { Comment, schemaComment } from '../types/data';
 
-export async function getComments(id: string): Promise<IComment[]> {
+export async function getComments(id: string): Promise<Comment[]> {
   const res = await fetch(
     `https://jsonplaceholder.typicode.com/posts/${id}/comments`,
   );
@@ -8,5 +8,6 @@ export async function getComments(id: string): Promise<IComment[]> {
     throw new Error('Failed to fetch data');
   }
 
-  return res.json();
+  const result = await res.json();
+  return schemaComment.array().parseAsync(result);
 }

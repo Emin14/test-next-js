@@ -1,0 +1,18 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 20px;
+  padding: 20px 0 4px 0;
+  border-bottom: 1px solid rgb(145, 40, 40);
+  margin-bottom: 30px;
+}
+
+.link {
+  padding: 10px 20px;
+  background-color: rgb(46, 155, 126);
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+}

@@ -1,6 +1,6 @@
-import { IUser } from '../types/data';
+import { User, schemaUser } from '../types/data';
 
-export async function getUser(id: number): Promise<IUser[]> {
+export async function getUser(id: number): Promise<User[]> {
   const res = await fetch(
     `https://jsonplaceholder.typicode.com/users?id=${id}`,
   );
@@ -8,5 +8,6 @@ export async function getUser(id: number): Promise<IUser[]> {
     throw new Error('Failed to fetch data');
   }
 
-  return res.json();
+  const result = await res.json();
+  return schemaUser.array().parseAsync(result);
 }

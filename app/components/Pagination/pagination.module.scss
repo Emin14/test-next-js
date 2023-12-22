@@ -1,0 +1,23 @@
+.pages {
+  display: flex;
+  justify-content: center;
+  column-gap: 10px;
+  padding: 35px 0;
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.pageCount {
+  font-weight: 600;
+  width: 34px;
+  height: 34px;
+  background-color: rgba(32, 35, 51, 0.07);
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &.active {
+    color: white;
+    background-color: rgb(62, 203, 128);
+  }
+}

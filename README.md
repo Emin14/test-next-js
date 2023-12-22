@@ -11,7 +11,6 @@ https://gist.github.com/bethrezen/04a6556967b8d4ff19becd765ae43ed7
 
 ![preview](https://github.com/Emin14/test-next-js/assets/122212022/17f62f83-9623-40cf-aa59-7ce1f85d7981)
 
-
 ## Run Locally
 
 Clone the project
@@ -37,7 +36,6 @@ Start the server
 ```bash
   npm run dev
 ```
-
 
 ## Features
 
