@@ -36,8 +36,8 @@ export default function Posts() {
   return (
     <ul className={styles.posts}>
       {posts.map((post) => (
-        <li className={styles.post}>
-          <Link key={post.id} href={`/post/${post.id}`}>
+        <li className={styles.post} key={post.id}>
+          <Link href={`/post/${post.id}`}>
             <article>
               <h3 className={styles.title}>{post.title}</h3>
               <p className={styles.body}>{post.body}</p>
