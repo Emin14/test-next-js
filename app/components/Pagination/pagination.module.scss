@@ -21,3 +21,14 @@
     background-color: rgb(62, 203, 128);
   }
 }
+
+@media (max-width: 575.98px) {
+  .pages {
+    column-gap: 6px;
+  }
+  .pageCount {
+    width: 26px;
+    height: 26px;
+    font-size: 14px;
+  }
+}
