@@ -2,8 +2,7 @@
 
 ## Description
 
-Test application made from:
-https://gist.github.com/bethrezen/04a6556967b8d4ff19becd765ae43ed7
+The test task is located in test-react.md
 
 ## Preview
 
